@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="converter">
+            <div class="input-group">
+                <label for="value">Value:</label>
+                <input type="number" id="value" placeholder="Enter value">
+            </div>
+            <div class="input-group">
+                <label for="conversionType">Conversion Type:</label>
+                <select id="conversionType">
+                    <option value="meters_to_yards">Meters to Yards</option>
+                    <option value="yards_to_meters">Yards to Meters</option>
+                    <option value="kilograms_to_pounds">Kilograms to Pounds</option>
+                    <option value="pounds_to_kilograms">Pounds to Kilograms</option>
+                    <option value="liters_to_gallons">Liters to Gallons</option>
+                    <option value="gallons_to_liters">Gallons to Liters</option>
+                </select>
+            </div>
+            <button onclick="convert()">Convert</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
